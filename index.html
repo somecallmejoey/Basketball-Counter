@@ -4,6 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basketball Counter</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="outerScoreCard">
+      <div class="scorecard">
+        <div class="home">
+          <h1>HOME</h1>
+          <p id="homeScore">0</p>
+          <div class="add">
+            <button onclick="increaseHome(1)">+1</button>
+            <button onclick="increaseHome(2)">+2</button>
+            <button onclick="increaseHome(3)">+3</button>
+          </div>
+        </div>
+        <div class="guestScore">
+          <h1>GUEST</h1>
+          <p id="guestScore">0</p>
+          <div class="add">
+            <button onclick="increaseAway(1)">+1</button>
+            <button onclick="increaseAway(2)">+2</button>
+            <button onclick="increaseAway(3)">+3</button>
+          </div>
+        </div>
+      </div>
+      <div class="options">
+        <button onclick="resetCount()">New Game</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
